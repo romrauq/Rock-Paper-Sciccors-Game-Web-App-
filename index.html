@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+	<header>
+		<h1>Rock Paper Scissors</h1>
+	</header>
+
+	<div id="scoreboard" class="scoreboard">
+		<p>Player: 0</p>
+		<p>Computer: 0</p>
+	</div>
+	
+	<div id="rps_container">
+		<div id="rock" class="rock">
+			<img src="img/rock.png"/ alt="rock_image" onclick="clickTest()">
+			<p class="spaced-above">ROCK</p>
+		</div>
+		<div id="paper" class="paper">
+			<img src="img/paper.png"/ alt="paper_image" onclick="clickTest()">
+			<p class="spaced-above">PAPER</p>
+		</div>
+
+		<div id="scissors" class="scissors">
+			<img src="img/scissors.png" alt="scissors_image"/ onclick="clickTest()">
+			<p class="spaced-above">SCISSORS</p>
+		</div>
+
+	</div>
+
+	<p id="subtext"></p>
+
+	<!-- I intend to put each of the text below above their respective images.	
+	<div id="rps_text">
+		<div id="rock_text"><p>rock</p></div>
+		<div id="paper_text"><p>paper</p></div>
+		<div id="scissors_text"><p>scissors</p></div>
+	</div>
+	-->
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+
+</html>
