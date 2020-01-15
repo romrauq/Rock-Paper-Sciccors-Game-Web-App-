@@ -1,7 +1,0 @@
-Compare id with the array srting that the randComptuter generates.
-Alert if player wins based on comparism OR Alert if comptuter wins based on comparism.
-
-if(player id == compRand id){
-	alert("Draw! Tra\y Agan!")
-	}
-	
