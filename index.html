@@ -9,39 +9,46 @@
 	<header>
 		<h1>Rock Paper Scissors</h1>
 	</header>
-
-	<div id="scoreboard" class="scoreboard">
-		<p>Player: 0</p>
-		<p>Computer: 0</p>
-	</div>
 	
-	<div id="rps_container">
-		<div id="rock" class="rock">
-			<img src="img/rock.png"/ alt="rock_image" onclick="clickTest()">
+	<div id="score" class="score">
+		<p class="score-text">Player: 0</p>
+		<p class="score-text">Computer: 0</p>
+
+		<div>
+			<button id="restart" class="restart-btn">RESTART GAME</button>	
+		</div>
+	</div>
+
+	
+	
+
+	<h2>Select Your Move Below</h2>
+	<div id="choices">
+		<div id="rock" class="choice" onclick="clickTest()">
+			<img src="img/rock.png"/ alt="rock-image">
 			<p class="spaced-above">ROCK</p>
 		</div>
-		<div id="paper" class="paper">
-			<img src="img/paper.png"/ alt="paper_image" onclick="clickTest()">
+		<div id="paper" class="choice" onclick="clickTest()">
+			<img src="img/paper.png"/ alt="paper-image">
 			<p class="spaced-above">PAPER</p>
 		</div>
 
-		<div id="scissors" class="scissors">
-			<img src="img/scissors.png" alt="scissors_image"/ onclick="clickTest()">
+		<div id="scissors" class="choice" onclick="clickTest()">
+			<img src="img/scissors.png" alt="scissors-image"/>
 			<p class="spaced-above">SCISSORS</p>
 		</div>
-
 	</div>
 
-	<p id="subtext"></p>
-
-	<!-- I intend to put each of the text below above their respective images.	
-	<div id="rps_text">
-		<div id="rock_text"><p>rock</p></div>
-		<div id="paper_text"><p>paper</p></div>
-		<div id="scissors_text"><p>scissors</p></div>
+	<!-- Modal -->
+	<div class="modal"> 
+		<div id="result" class="modal-content">
+				<h3>You win!</h3>
+				<img src="img/rock.png"/ alt="rock-image">
+				<p>Computer chose rock</p>
+		</div>
 	</div>
-	-->
-<script type="text/javascript" src="scripts.js"></script>
+
+<script src="scripts.js"></script>
 </body>
 
 </html>

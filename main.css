@@ -5,10 +5,26 @@
 
 		h1{
 			font-family: tahoma;
-			color: skyblue;
+			color: #555;
 			text-align: center;
 			text-decoration: underline;
 			}
+
+		h2{
+			font-family: Tahoma;
+			color: #555;
+			text-align: center;
+			font-weight: 100px;
+		}
+
+		h3{
+			font-family: tahoma;
+			color: limegreen;
+		}
+
+		#restart-btn{
+			text-align: center;
+		}
 
 		#intro_text{
 			font-size: 25px;
@@ -22,7 +38,7 @@
 			font-family: Tahoma;
 			}
 
-		#scoreboard{
+		#score{
 			border-radius: 5px;
 			margin: 5px auto;	
 			height: auto;
@@ -61,7 +77,7 @@
 	
 		}
 
-		#rps_container{
+		#choices{
 			text-align: center;
 			margin-top: 15px;
 			margin-left: auto;

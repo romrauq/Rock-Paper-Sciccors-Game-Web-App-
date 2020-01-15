@@ -1,5 +1,5 @@
 //Debugger function:
 function clickTest(){
-	console.log('Clicked!')
+	alert('Clicked!');
 }
 
