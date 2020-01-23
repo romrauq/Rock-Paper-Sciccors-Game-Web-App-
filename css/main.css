@@ -1,61 +1,109 @@
-		h1{
-			font-family: tahoma;
-			color: skyblue;
-			text-align: center;
-			text-decoration: underline;
-			}
+:root {
+	--win-color: #28a745;
+	--lose-color: #dc3545;
+	--modal-duration: 1s;
+}
 
-		#intro_text{
-			font-size: 25px;
-			text-align: center;
-			font-family: Tahoma;
-			}
+*{
+	margin: 0px;
+	padding: 0px;
+}
 
-		#instruction{
-			font-size: 20px;
-			text-align: center;
-			font-family: Tahoma;
-			}
+.title-heading {
+	font-family: tahoma;
+	color: skyblue;
+	text-align: center;
+	text-decoration: underline;
+}
 
-		img{
-			margin: auto;
-			height: 150px;
-			width: 150px;
-			}
+#score{
+	margin: 5px auto;	
+	height: auto;
+	width: 300px;
+	border-radius: 5px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
 
-		#subtext{
-			font-size: 20px;
-			text-align: center;
-			font-family: Tahoma;
-			}
+.button-container{
+/*	border: solid limegreen 1px;*/
+	width: 400px;
+	margin: auto;
+}
 
-		#rps_text{
-			text-align: center;
-			margin-left: auto;
-			margin-right: auto;
-		}
+.restart-btn{
+	text-align: center;
+	width: 150px;
+	padding: 5px;
+	margin: 5px auto;
+}
 
-		#rock_text #paper_text #scissors_text{
-			border: 5px solid red;
-			float: left;
-	
-		}
+.instruction{
+	font-family: Tahoma;
+	color: firebrick;
+	text-align: center;
+	font-weight: 100px;
+	margin-top: 10px;
+}
 
-		#rps_container{
-			text-align: center;
-			margin-top: 35px;
-			margin-left: auto;
-			margin-right: auto;
-			}
+img{
+	/*margin: auto;*/
+	height: 150px;
+	width: 150px;
+	}
 
-		#rock, #paper, #scissors{
-			display: inline-block;
-			/*float: left; (removed cos it was interfering with centering)*/ 
-			border: 5px solid #DC143C;
-			height: 150px;
-			width: 150px;
-			margin: 2px;
-			border-radius: 5px;
-			}
+.spaced-above{
+	margin-top: 10px;
+	font-family: sans-serif;
+}
 
-		
+#subtext{
+	font-size: 20px;
+	text-align: center;
+	font-family: Tahoma;
+	}
+
+#rps_text{
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#rock_text #paper_text #scissors_text{
+	border: 5px solid red;
+	float: left;
+}
+
+#choices{
+	text-align: center;
+	margin-top: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.choice{
+	color: skyblue;
+	cursor: pointer;
+}
+
+.choice:hover{
+	color: firebrick;
+}
+
+.text-win{
+	color: var(--win-color);
+}
+
+.lose-color{
+	color: var(--lose-color);
+}
+
+#rock, #paper, #scissors{
+	display: inline-block;
+	border: 5px solid limegreen;
+	height: 150px;
+	width: 150px;
+	margin: 2px;
+	border-radius: 5px;
+}
+

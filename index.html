@@ -2,27 +2,27 @@
 <html>
 <head>
 	<title>Rock Paper Scissors</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
 </head>
 
 <body>
 	<header>
-		<h1>Rock Paper Scissors</h1>
+		<h1 class="title-heading">Rock Paper Scissors</h1>
 	</header>
 	
 	<div id="score" class="score">
 		<p class="score-text">Player: 0</p>
 		<p class="score-text">Computer: 0</p>
-
-		<div>
-			<button id="restart" class="restart-btn">RESTART GAME</button>	
-		</div>
 	</div>
 
-	
-	
+	<div class="button-container">
+		<center>
+			<button id="restart" class="restart-btn">RESTART GAME</button>
+		</center>	
+	</div>
 
-	<h2>Select Your Move Below</h2>
+	<h2 class="instruction">Select Your Move Below</h2>
 	<div id="choices">
 		<div id="rock" class="choice" onclick="clickTest()">
 			<img src="img/rock.png"/ alt="rock-image">
@@ -42,7 +42,7 @@
 	<!-- Modal -->
 	<div class="modal"> 
 		<div id="result" class="modal-content">
-				<h3>You win!</h3>
+				<h1 class="text-win">You win!</h3>
 				<img src="img/rock.png"/ alt="rock-image">
 				<p>Computer chose rock</p>
 		</div>
