@@ -10,8 +10,7 @@
 }
 
 .title-heading {
-	font-family: tahoma;
-	color: skyblue;
+	font-family: sans-serif;
 	text-align: center;
 	text-decoration: underline;
 }
@@ -32,8 +31,9 @@
 }
 
 .restart-btn{
+	font-family: tahoma;
 	text-align: center;
-	width: 150px;
+	width: 140px;
 	padding: 5px;
 	margin: 5px auto;
 }
