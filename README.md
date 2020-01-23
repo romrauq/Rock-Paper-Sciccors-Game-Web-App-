@@ -1,2 +1,2 @@
 #Rock Paper Sciccors
-This project is a simple program to learn some features of Javascript.
+This project is developed to learn and implement some basic features of Javascript as well as getting used to using Git & Github.
