@@ -31,6 +31,7 @@
 }
 
 .restart-btn{
+	display: none;
 	font-family: tahoma;
 	text-align: center;
 	width: 140px;
