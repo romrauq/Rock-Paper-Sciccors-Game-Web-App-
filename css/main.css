@@ -1,6 +1,7 @@
 :root {
 	--win-color: #28a745;
 	--lose-color: #dc3545;
+	--draw-color: ;
 	--modal-duration: 1s;
 }
 
@@ -12,22 +13,49 @@
 .title-heading {
 	font-family: sans-serif;
 	text-align: center;
-	text-decoration: underline;
+	padding: 5px;
+}
+
+.title-container{
+	width: 500px;
+	margin: 15px auto 10px auto;
+	border: 5px solid #555;
+	border-radius: 15px;
+}
+
+.game-container{
+	width: 500px;
+	margin: 10px auto; 
+	border: 5px solid #555;
+	border-radius: 15px;
+
 }
 
 #score{
 	margin: 5px auto;	
 	height: auto;
 	width: 300px;
-	border-radius: 5px;
+	border: 5px solid #555;
+	padding: 5px 10px; 
+	border-radius: 15px;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.score-player{
+	font-family: Tahoma;
+	font-size: 20px;
+}
+
+.score-computer{
+	font-family: Tahoma;
+	font-size: 20px;
 }
 
 .button-container{
 /*	border: solid limegreen 1px;*/
 	width: 400px;
-	margin: auto;
+	margin: 10px auto 10px auto;
 }
 
 .restart-btn{
@@ -35,6 +63,7 @@
 	font-family: tahoma;
 	text-align: center;
 	width: 140px;
+	border-radius: 10px;
 	padding: 5px;
 	margin: 5px auto;
 }
@@ -42,6 +71,7 @@
 .instruction{
 	font-family: Tahoma;
 	color: firebrick;
+	text-decoration: underline;
 	text-align: center;
 	font-weight: 100px;
 	margin-top: 10px;
@@ -49,9 +79,15 @@
 
 img{
 	/*margin: auto;*/
+	border: 5px solid firebrick;
+	border-radius: 10px;
 	height: 150px;
 	width: 150px;
-	}
+}
+
+img:hover{
+	border: 5px solid limegreen;
+}
 
 .spaced-above{
 	margin-top: 10px;
@@ -83,28 +119,28 @@ img{
 }
 
 .choice{
-	color: skyblue;
-	cursor: pointer;
+	color: firebrick;
+/*	cursor: pointer;*/
 }
 
 .choice:hover{
-	color: firebrick;
+	color: limegreen;
 }
 
 .text-win{
 	color: var(--win-color);
 }
 
-.lose-color{
+.text-lose{
 	color: var(--lose-color);
 }
 
 #rock, #paper, #scissors{
 	display: inline-block;
-	border: 5px solid limegreen;
+/*	border: 5px solid limegreen;
 	height: 150px;
 	width: 150px;
 	margin: 2px;
-	border-radius: 5px;
+	border-radius: 5px;*/
 }
 

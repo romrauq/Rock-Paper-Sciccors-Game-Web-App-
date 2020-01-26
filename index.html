@@ -8,43 +8,45 @@
 
 <body>
 	<header>
-		<h1 class="title-heading">Rock Paper Scissors</h1>
+		<div class="title-container">
+			<h1 class="title-heading">Rock Paper Scissors</h1>
+		</div>
 	</header>
 	
-	<div id="score" class="score">
-		<p class="score-text">Player: 0</p>
-		<p class="score-text">Computer: 0</p>
-	</div>
-
-	<div class="button-container">
-		<center>
-			<button id="restart" class="restart-btn">RESTART GAME</button>
-		</center>	
-	</div>
-
-	<h2 class="instruction">Select Your Move Below</h2>
-	<div id="choices">
-		<div id="rock" class="choice">
-			<img src="img/rock.png"/ alt="rock-image">
-			<p class="spaced-above">ROCK</p>
-		</div>
-		<div id="paper" class="choice">
-			<img src="img/paper.png"/ alt="paper-image">
-			<p class="spaced-above">PAPER</p>
+	<div class="game-container">
+		<div id="score" class="score">
+			<p class="score-player">Player: 0</p>
+			<p class="score-computer">Computer: 0</p>
 		</div>
 
-		<div id="scissors" class="choice">
-			<img src="img/scissors.png" alt="scissors-image"/>
-			<p class="spaced-above">SCISSORS</p>
+		<h2 class="instruction">Select From The Moves Below</h2>
+		<div id="choices">
+			<div id="rock" class="choice">
+				<img src="img/rock.png"/ alt="rock-image" id="rock">
+				<p class="spaced-above">ROCK</p>
+			</div>
+			<div id="paper" class="choice">
+				<img src="img/paper.png"/ alt="paper-image" id="paper">
+				<p class="spaced-above">PAPER</p>
+			</div>
+
+			<div id="scissors" class="choice">
+				<img src="img/scissors.png" alt="scissors-image" id="scissors">
+				<p class="spaced-above">SCISSORS</p>
+			</div>
+		</div>
+
+		<div class="button-container">
+			<center>
+				<button id="restart" class="restart-btn" onclick="restartGame()">RESTART GAME</button>
+			</center>	
 		</div>
 	</div>
-
+	
 	<!-- Modal -->
 	<div class="modal"> 
 		<div id="result" class="modal-content">
-				<h1 class="text-win">You win!</h3>
-				<img src="img/rock.png"/ alt="rock-image">
-				<p>Computer chose rock</p>
+				
 		</div>
 	</div>
 
