@@ -1,7 +1,7 @@
 :root {
 	--win-color: #28a745;
 	--lose-color: #dc3545;
-	--draw-color: ;
+	--draw-color: #FF8C00;
 	--modal-duration: 1s;
 }
 
@@ -19,14 +19,14 @@
 .title-container{
 	width: 500px;
 	margin: 15px auto 10px auto;
-	border: 5px solid #555;
+	border: 3px solid #555;
 	border-radius: 15px;
 }
 
 .game-container{
 	width: 500px;
 	margin: 10px auto; 
-	border: 5px solid #555;
+	border: 3px solid #555;
 	border-radius: 15px;
 
 }
@@ -35,7 +35,7 @@
 	margin: 5px auto;	
 	height: auto;
 	width: 300px;
-	border: 5px solid #555;
+	border: 3px solid #555;
 	padding: 5px 10px; 
 	border-radius: 15px;
 	display: grid;
@@ -79,17 +79,17 @@
 
 img{
 	/*margin: auto;*/
-	border: 5px solid firebrick;
+	border: 3px solid firebrick;
 	border-radius: 10px;
 	height: 150px;
 	width: 150px;
 }
 
 img:hover{
-	border: 5px solid limegreen;
+	border: 3px solid limegreen;
 }
 
-.spaced-above{
+.img-text{
 	margin-top: 10px;
 	font-family: sans-serif;
 }
@@ -125,6 +125,10 @@ img:hover{
 
 .choice:hover{
 	color: limegreen;
+}
+
+.text-draw{
+	color: var(--draw-color);
 }
 
 .text-win{

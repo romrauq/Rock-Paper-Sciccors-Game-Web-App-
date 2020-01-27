@@ -54,7 +54,6 @@ function getWinner( player, computer){
 	}else {
 		return 'player';
 	}
-
 }
 
 //Show winner
@@ -81,7 +80,7 @@ function showWinner(winner, computerChoice){
 	}else{
 		//Show drawing modal result
 		result.innerHTML = `
-		<h1 class='text-lose'>Its a Draw</h1>
+		<h1 class='text-draw'>Its a Draw</h1>
 		<img src="img/${computerChoice}.png" class='img ${computerChoice}'>
 		<p> Computer Chose <strong>${computerChoice.charAt(0).toUpperCase() + computerChoice.slice(1)}</strong></p>
 		`;
