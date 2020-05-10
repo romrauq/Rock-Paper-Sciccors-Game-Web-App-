@@ -17,8 +17,6 @@ function play(e) {
 
   showWinner(winner, computerChoice);
   clearModal(e);
-  // console.log(playerChoice, computerChoice);
-  // console.log(playerChoice, computerChoice, winner);
 }
 
 //Get computer's choice

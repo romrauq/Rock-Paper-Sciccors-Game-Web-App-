@@ -1,150 +1,157 @@
 :root {
-	--win-color: #28a745;
-	--lose-color: #dc3545;
-	--draw-color: #FF8C00;
-	--modal-duration: 1s;
+  --win-color: #28a745;
+  --lose-color: #dc3545;
+  --draw-color: #ff8c00;
+  --modal-duration: 1s;
 }
 
-*{
-	margin: 0px;
-	padding: 0px;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
 }
 
 .title-heading {
-	font-family: sans-serif;
-	text-align: center;
-	padding: 5px;
+  font-family: sans-serif;
+  text-align: center;
+  padding: 5px;
 }
 
-.title-container{
-	width: 500px;
-	margin: 15px auto 10px auto;
-	border: 3px solid #555;
-	border-radius: 15px;
+.title-container {
+  width: 500px;
+  margin: 15px auto 10px auto;
+  background-color: skyblue;
+  border: 3px solid #555;
+  border-radius: 15px;
 }
 
-.game-container{
-	width: 500px;
-	margin: 10px auto; 
-	border: 3px solid #555;
-	border-radius: 15px;
-
+.game-container {
+  width: 500px;
+  margin: 10px auto;
+  background-color: skyblue;
+  border: 3px solid #555;
+  border-radius: 15px;
 }
 
-#score{
-	margin: 5px auto;	
-	height: auto;
-	width: 300px;
-	border: 3px solid #555;
-	padding: 5px 10px; 
-	border-radius: 15px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
+#score {
+  height: auto;
+  width: 300px;
+  border: 3px solid #555;
+  padding: 5px 10px;
+  margin: 5px auto;
+  background-color: violet;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 15px;
 }
 
-.score-player{
-	font-family: Tahoma;
-	font-size: 20px;
+.score-player {
+  font-family: Tahoma;
+  font-size: 20px;
 }
 
-.score-computer{
-	font-family: Tahoma;
-	font-size: 20px;
+.score-computer {
+  font-family: Tahoma;
+  font-size: 20px;
 }
 
-.button-container{
-/*	border: solid limegreen 1px;*/
-	width: 400px;
-	margin: 10px auto 10px auto;
+.button-container {
+  /*	border: solid limegreen 1px;*/
+  width: 400px;
+  margin: 10px auto 10px auto;
 }
 
-.restart-btn{
-	display: none;
-	font-family: tahoma;
-	text-align: center;
-	width: 140px;
-	border-radius: 10px;
-	padding: 5px;
-	margin: 5px auto;
+.restart-btn {
+  display: none;
+  color: aliceblue;
+  font-size: 1rem;
+  font-family: tahoma;
+  font-weight: 800;
+  text-align: center;
+  width: 140px;
+  padding: 5px;
+  margin: 5px auto;
+  background-color: limegreen;
+  border: 3px solid firebrick;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.instruction{
-	font-family: Tahoma;
-	color: firebrick;
-	text-decoration: underline;
-	text-align: center;
-	font-weight: 100px;
-	margin-top: 10px;
+.instruction {
+  font-family: Tahoma;
+  color: black;
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 100px;
+  margin-top: 10px;
 }
 
-img{
-	/*margin: auto;*/
-	border: 3px solid firebrick;
-	border-radius: 10px;
-	height: 150px;
-	width: 150px;
+#rock,
+#paper,
+#scissors {
+  display: inline-block;
 }
 
-img:hover{
-	border: 3px solid limegreen;
+img {
+  /*margin: auto;*/
+  border: 2px solid firebrick;
+  border-radius: 10px;
+  height: 150px;
+  width: 150px;
 }
 
-.img-text{
-	margin-top: 10px;
-	font-family: sans-serif;
+img:hover {
+  border: 2px solid yellow;
+  cursor: pointer;
 }
 
-#subtext{
-	font-size: 20px;
-	text-align: center;
-	font-family: Tahoma;
-	}
-
-#rps_text{
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
+.img-text {
+  font-weight: bold;
+  margin-top: 10px;
+  font-family: sans-serif;
 }
 
-#rock_text #paper_text #scissors_text{
-	border: 5px solid red;
-	float: left;
+#subtext {
+  font-size: 20px;
+  text-align: center;
+  font-family: Tahoma;
 }
 
-#choices{
-	text-align: center;
-	margin-top: 15px;
-	margin-left: auto;
-	margin-right: auto;
+#rps_text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.choice{
-	color: firebrick;
-/*	cursor: pointer;*/
+#rock_text #paper_text #scissors_text {
+  border: 5px solid red;
+  float: left;
 }
 
-.choice:hover{
-	color: limegreen;
+#choices {
+  text-align: center;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.text-draw{
-	color: var(--draw-color);
+.choice {
+  color: firebrick;
+  /*	cursor: pointer;*/
 }
 
-.text-win{
-	color: var(--win-color);
+.choice:hover {
+  color: yellow;
 }
 
-.text-lose{
-	color: var(--lose-color);
+.text-draw {
+  color: var(--draw-color);
 }
 
-#rock, #paper, #scissors{
-	display: inline-block;
-/*	border: 5px solid limegreen;
-	height: 150px;
-	width: 150px;
-	margin: 2px;
-	border-radius: 5px;*/
+.text-win {
+  color: var(--win-color);
 }
 
+.text-lose {
+  color: var(--lose-color);
+}
